@@ -1,0 +1,299 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+matches:
+
+  - trigger: ":add"
+    replace: "D2, 399 appartments,\nnear Nehru foundation, opposite Gurudwara\nBodakdev,\nAhmdedabad - 380054"
+
+  - trigger: ":ph"
+    replace: "+91-812-8165351"
+
+  - trigger: ":bday"
+    replace: "24-02-1999"
+
+  - trigger: ":name"
+    replace: "Karan Desai"
+
+  - trigger: ":linktree"
+    replace: "https://linktr.ee/karandesai"
+
+# Obisidian use
+
+  - trigger: ":st"
+    replace: "1<sup>st</sup>"
+
+  - trigger: ":nd"
+    replace: "2<sup>nd</sup>"
+
+  - trigger: ":rd"
+    replace: "3<sup>rd</sup>"
+
+  - trigger: ":th"
+    replace: "<sup>th</sup>"
+
+  - trigger: ":cst"
+    replace: "1<sup>st</sup>*cy*"
+
+  - trigger: ":cnd"
+    replace: "2<sup>nd</sup>*cy*"
+
+  - trigger: ":crd"
+    replace: "3<sup>rd</sup>*cy*"
+
+  - trigger: ":cth"
+    replace: "<sup>th</sup>*cy*"
+
+  - trigger: " fo "
+    replace: " of "
+  
+  - trigger: "thier"
+    replace: "their"
+    
+  - trigger: "yr"
+    replace: "year"
+    
+  - trigger: ":imp"
+    replace: "important"
+    
+  - trigger: ":cap"
+    replace: "<center><code></code></center>"
+
+  - trigger: ":tag"
+    replace: "tags: []"
+
+  - trigger: ":ali"
+    replace: "aliases: []"
+
+  - trigger: ":bib"
+    replace: "# Sources\n## References\n\n## Bibliography\n"
+
+  - trigger: ":cy"
+    replace: "century"
+
+  - trigger: ":cen"
+    replace: "<center>$|$</center>"
+
+  - trigger: ":vplt"
+    replace: "Vaibhavshali Prachin Lipi Trust"
+
+  - trigger: ":.eg"
+    replace: "example"
+
+
+      # Places
+
+  - trigger: ":s-a"
+    replace: "South Asia"
+
+  - trigger: ":s-ea"
+    replace: "South-East Asia"
+
+  - trigger: ":c-a"
+    replace: "Central Asia"
+
+  - trigger: ":IVC"
+    replace: "Indus Valley Civilisation"
+
+  - trigger: ":lh"
+    replace: "Late Harappan"
+
+  - trigger: ":mh"
+    replace: "Mature Harappan"
+
+      # States of India
+
+  - trigger: "::ap"
+    replace: "Andhra Pradesh"
+
+  - trigger: "::ar"
+    replace: "Arunachal Pradesh"
+
+  - trigger: "::as"
+    replace: "Assam"
+
+  - trigger: "::bh"
+    replace: "Bihar"
+
+  - trigger: "::ch"
+    replace: "Chhattisghar"
+
+  - trigger: "::ga"
+    replace: "Goa"
+
+  - trigger: "::gj"
+    replace: "Gujarat"
+
+  - trigger: "::hy"
+    replace: "Haryana"
+
+  - trigger: "::hp"
+    replace: "Himachal Prades"
+
+  - trigger: "::jh"
+    replace: "Jharkhand"
+
+  - trigger: "::kn"
+    replace: "Karnatak"
+
+  - trigger: "::kl"
+    replace: "Kerala"
+
+  - trigger: "::mn"
+    replace: "Manipur"
+
+  - trigger: "::mg"
+    replace: "Meghalaya"
+
+  - trigger: "::mz"
+    replace: "Mizoram"
+
+  - trigger: "::ng"
+    replace: "Nagaland"
+
+  - trigger: "::od"
+    replace: "Odisha"
+
+  - trigger: "::pj"
+    replace: "Punjab"
+
+  - trigger: "::sk"
+    replace: "sikkim"
+
+  - trigger: "::tn"
+    replace: "Tamil Nadu"
+
+  - trigger: "::tl"
+    replace: "Telangana"
+
+  - trigger: "::tr"
+    replace: "Tripura"
+
+  - trigger: "::ut"
+    replace: "Uttrakhand"
+
+  - trigger: "::up"
+    replace: "Uttar Pradesh"
+
+  - trigger: "::mh"
+    replace: "Maharashtra"
+
+  - trigger: "::wb"
+    replace: "West Bengal"
+
+  - trigger: "::rj"
+    replace: "Rajasthan"
+
+  - trigger: "::mp"
+    replace: "Madhya Pradesh"
+
+
+# Directions 
+
+  - trigger: ":N"
+    replace: "North"
+
+  - trigger: ":S"
+    replace: "South"
+
+  - trigger: ":E"
+    replace: "East"
+
+  - trigger: ":W"
+    replace: "West"
+
+  - trigger: ":-nw"
+    replace: "North-West"
+
+  - trigger: ":-sw"
+    replace: "South-West"
+
+  - trigger: ":-se"
+    replace: "South-East"
+
+  - trigger: ":-ne"
+    replace: "North East"
+
+# Texts
+
+  - trigger: ":maha"
+    replace: "Mahabharata"
+
+  - trigger: ":rama"
+    replace: "Ramayana"
+
+  - trigger: ":ge"
+    replace: "Global Ethic"
+
+  - trigger: ":cpg"
+    replace: "copper plate grant"
+    
+  - trigger: ":BG"
+    replace: "Bhagvat Gita"
+
+  - trigger: ":rigv"
+    replace: "Rig Veda"
+
+  - trigger: ":athv"
+    replace: "Atharva Veda"
+
+  - trigger: ":yajv"
+    replace: "Yajur Veda"
+
+  - trigger: ":samv"
+    replace: "Sama veda"
+# People
+
+
+# Date
+
+  - trigger: ":date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y.%m.%d"
+    
+# Months 
+
+  - trigger: ";jan"
+    replace: "January"
+
+  - trigger: ";feb"
+    replace: "Febuary"
+
+  - trigger: ";mar"
+    replace: "March"
+
+  - trigger: ";apr"
+    replace: "April"
+
+  - trigger: ";may"
+    replace: "May"
+
+  - trigger: ";jun"
+    replace: "June"
+
+  - trigger: ";jul"
+    replace: "July"
+
+  - trigger: "aug"
+    replace: "August"
+
+  - trigger: ";sep"
+    replace: "September"
+
+  - trigger: ";oct"
+    replace: "October"
+
+  - trigger: ";nov"
+    replace: "November"
+
+  - trigger: ";dec"
+    replace: "December"
