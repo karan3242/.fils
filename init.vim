@@ -1,6 +1,5 @@
 " Don't try to be vi compatible
 " set nocompatible
-
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
@@ -65,8 +64,6 @@ set showmode
 set showcmd
 
 " Searching
-nnoremap / /\v
-vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
@@ -124,17 +121,20 @@ set sw=2
 " type in \ref{fig: and press <C-n> you will automatically cycle through
 " all the figure labels. Very useful!
 set iskeyword+=:
-" Maps
-map <leader>z ]sz=
-map <leader>x ]szg
+
+" Maps of keys
+map <leader>z 0]sz=
+map <leader>x 0]szg
 map <leader>h :noh<enter>
 map <C-v> "+p
-map <C-c> "+c
-map <C-a> ggVG
+map <C-c> "+y
+imap <S-Space> <Esc>zz
+nnoremap <S-Space> i
 map <C-s> :w<enter>
 map <C-g> g<C-g>
 map c ci
-map <C-i> i**<Esc>i
-map <C-b> i****<Esc>hi
-map <C-u> i<u></u><Esc>3hi
-map <Esc> <Esc>zz
+imap <C-i> **<Esc>i
+imap <C-b> ****<Esc>hi
+imap <C-u> <u></u><Esc>3hi
+map O Go
+map a A
