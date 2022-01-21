@@ -11,6 +11,9 @@ matches:
   - trigger: ":add"
     replace: "D2, 399 appartments,\nnear Nehru foundation, opposite Gurudwara\nBodakdev,\nAhmdedabad - 380054"
 
+  - trigger: ":w3wh"
+    replace: "///bathtubs.february.screening"
+
   - trigger: ":ph"
     replace: "+91-812-8165351"
 
@@ -22,6 +25,9 @@ matches:
 
   - trigger: ":linktree"
     replace: "https://linktr.ee/karandesai"
+
+  - trigger: ":setloc"
+    replace: "Set-Location"
 
 # Obisidian use
 
@@ -85,6 +91,30 @@ matches:
   - trigger: ":.eg"
     replace: "example"
 
+      # For latexmd
+
+  - trigger: "$st"
+    replace: "1$^{st}$"
+
+  - trigger: "$nd"
+    replace: "2$^{nd}$"
+
+  - trigger: "$rd"
+    replace: "3$^{rd}$"
+
+  - trigger: "$th"
+    replace: "$^{th}$"
+
+      # People
+      
+  - trigger: ":puj"
+    replace: "Pujyashri"
+
+  - trigger: ":shr"
+    replace: "Sharmishthabhen"
+
+  - trigger: ":raj"
+    replace: "Srimad Rajchandra"
 
       # Places
 
@@ -260,13 +290,21 @@ matches:
         params:
           format: "%Y.%m.%d"
     
+  - trigger: ":log"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y%m%d%h%M%s"
+
 # Months 
 
   - trigger: ";jan"
     replace: "January"
 
   - trigger: ";feb"
-    replace: "Febuary"
+    replace: "February"
 
   - trigger: ";mar"
     replace: "March"
@@ -283,7 +321,7 @@ matches:
   - trigger: ";jul"
     replace: "July"
 
-  - trigger: "aug"
+  - trigger: ";aug"
     replace: "August"
 
   - trigger: ";sep"
