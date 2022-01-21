@@ -3,8 +3,15 @@
 " Helps force plugins to load correctly when it is turned back on below
 filetype off
 
-" TODO: Load plugins here (pathogen or vundle)
+" TODO: Load plugins here (pathogen or vundle Or plug)
 
+call plug#begin('C:\Users\workforce13\AppData\Local\nvim\plugged')
+Plug 'iCyMind/NeoSolarized'
+Plug 'lervag/vimtex'
+Plug 'junegunn/goyo.vim'
+Plug 'vimwiki/vimwiki'
+Plug 'terryma/vim-multiple-cursors'
+call plug#end()
 
 " Turn on syntax highlighting
 syntax on
@@ -82,7 +89,8 @@ set spell spelllang=en_us
 " Formatting
 " map <leader>q gqip
 
-
+set autowriteall
+set splitbelow splitright
 " Visualize tabs and newlines
 set listchars=tab:▸\ ,eol:¬
 " Uncomment this to enable by default:
@@ -125,6 +133,7 @@ set iskeyword+=:
 " Maps of keys
 map <leader>z 0]sz=
 map <leader>x 0]szg
+map <leader>f :Goyo<enter>
 map <leader>h :noh<enter>
 map <C-v> "+p
 map <C-c> "+y
@@ -138,3 +147,9 @@ imap <C-b> ****<Esc>hi
 imap <C-u> <u></u><Esc>3hi
 map O Go
 map a A
+" map j jzz
+" map k kzz
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-h> <C-w>h
+map <C-l> <C-w>l
